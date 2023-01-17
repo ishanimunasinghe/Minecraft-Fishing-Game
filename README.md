@@ -4,7 +4,7 @@ This program is a fishing game that uses Minecraft images. The player can select
 
 ![image](https://user-images.githubusercontent.com/115895656/212822873-b98a4361-bd3f-4db8-b698-dbef296143fe.png)
 
-Fishing can be done by either tapping on the fish that 'swim to the top' or by using options on the "Fish for Me" panel.
+Fishing can be done by either tapping on the fish that 'swim to the top' or by using options on the "Fish for Me" panel. There is a live fish counter in the bottom left corner and a timer (15 seconds) on the top right corner of the screen. 
 
 ![image](https://user-images.githubusercontent.com/115895656/212822943-e43a9852-5aa8-42fb-8d97-76ac4f4ee95c.png)
 
