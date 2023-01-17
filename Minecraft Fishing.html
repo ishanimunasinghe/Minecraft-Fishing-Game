@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minecraft Fishing</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="welcome-screen">
+      <h1>Minecraft Fishing</h1>
+      <hr />
+      <h2>Select a Character:</h2>
+      <p>
+        <img
+          id="steve-img"
+          class="character-img active"
+          src="img/steve.jpg"
+          alt="Steve"
+        />
+        <img
+          id="alex-img"
+          class="character-img"
+          src="img/alex.jpg"
+          alt="Alex"
+        />
+        <img
+          id="villager-img"
+          class="character-img"
+          src="img/villager.jpg"
+          alt="Villager"
+        />
+      </p>
+      <p>Welcome to Minecraft Fishing! Here are the instructions:</p>
+      <p>
+        1. Click on one of the above characters based on which type of fish you
+        want to catch. For example, Steve catches a lot of raw cod while the
+        villager catches mostly enchanted books.
+      </p>
+      <p>
+        2. Once you start fishing, there are two ways you can catch fish: either
+        by pushing on the 'fish for me' buttons on the left-hand side of your
+        screen or by tapping on the fish as they appear on the screen.
+      </p>
+      <p>
+        3. Watch the tracker to see how many fish you catch. Try to get the most
+        number of fish before the time runs out!
+      </p>
+      <p>4. Click on the button below to start fishing!</p>
+      <button id="go-fishing-btn">Go Fishing!</button>
+      <hr />
+    </div>
+
+    <div id="game-screen">
+      <img id="water" src="img/Water.webp" width="100%" height="100%" />
+
+      <div id="fish-for-me">
+        <h2><u>Fish for Me:</u></h2>
+        <p>
+          <button id="fish-btn">Fish</button>
+          <button id="plus5">+5</button>
+          <button id="plus50">+50</button>
+          <button id="until200">Until 200 Cod</button>
+          <button id="until500">Until 500 Salmon</button>
+        </p>
+      </div>
+
+      <div id="fish-tracker">
+        <h2><u>Fish Tracker</u></h2>
+        <p>
+          <img src="img/Raw-Cod.png" alt="Raw Cod" width="20px" /> Raw Cod:
+          <span id="num-cod">0</span>
+        </p>
+        <p>
+          <img src="img/Raw-Salmon.png" alt="Raw Salmon" width="20px" /> Raw
+          Salmon: <span id="num-salmon">0</span>
+        </p>
+        <p>
+          <img src="img/Tropical-Fish.png" alt="Tropical Fish" width="20px" />
+          Tropical Fish: <span id="num-tropical">0</span>
+        </p>
+        <p>
+          <img src="img/Pufferfish.png" alt="Pufferfish" width="20px" />
+          Pufferfish: <span id="num-puffer">0</span>
+        </p>
+        <p>
+          <img src="img/Enchanted-Book.png" alt="No Fish" width="20px" /> No
+          Fish:
+          <span id="num-no-fish">0</span>
+        </p>
+
+        <h2>Last Fish Caught:</h2>
+        <p>
+          <img id="img-result" src="img/Fishing-Rod.png" alt="Pufferfish" />
+        </p>
+      </div>
+      <div id="clock">
+        <span id="seconds">10</span>
+      </div>
+
+      <img id="cod-img" class="fish-img" src="img/Raw-Cod.png" />
+      <img id="salmon-img" class="fish-img" src="img/Raw-Salmon.png" />
+      <img id="tropical-img" class="fish-img" src="img/Tropical-Fish.png" />
+      <img id="puffer-img" class="fish-img" src="img/Pufferfish.png" />
+      <img id="book-img" class="fish-img" src="img/Enchanted-Book.png" />
+    </div>
+
+    <div id="end-screen">
+      <h2>Good job!</h2>
+      <p>This is how many fish you caught:</p>
+      <h2><u>Final Fish Count</u></h2>
+      <p>
+        <img src="img/Raw-Cod.png" alt="Raw Cod" width="20px" /> Raw Cod:
+        <span id="final-cod">0</span>
+      </p>
+      <p>
+        <img src="img/Raw-Salmon.png" alt="Raw Salmon" width="20px" /> Raw
+        Salmon: <span id="final-salmon">0</span>
+      </p>
+      <p>
+        <img src="img/Tropical-Fish.png" alt="Tropical Fish" width="20px" />
+        Tropical Fish: <span id="final-tropical">0</span>
+      </p>
+      <p>
+        <img src="img/Pufferfish.png" alt="Pufferfish" width="20px" />
+        Pufferfish: <span id="final-puffer">0</span>
+      </p>
+      <p>
+        <img src="img/Enchanted-Book.png" alt="No Fish" width="20px" /> No Fish:
+        <span id="final-no-fish">0</span>
+      </p>
+      <button id="replay-btn">Play Again!</button>
+    </div>
+
+    <!-- Load JavaScript-->
+    <script src="script.js"></script>
+  </body>
+</html>
